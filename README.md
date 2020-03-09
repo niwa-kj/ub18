@@ -1,5 +1,4 @@
 ### ub18
 
-ubuntu18
-
-This is a personal note.
+This repository is my personal note.
+You can use it freely at your own risk.
