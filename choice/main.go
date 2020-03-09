@@ -7,6 +7,8 @@ import "os"
 import "time"
 
 func main(){
+
+	// シードを与える
 	rand.Seed(time.Now().UnixNano())
 	c := len(os.Args) - 1
 	fmt.Printf("len %d \n", c)

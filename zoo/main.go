@@ -1,3 +1,4 @@
+// パッケージを試す
 package main
 
 import "./animals"
