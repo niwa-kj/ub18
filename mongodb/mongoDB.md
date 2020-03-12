@@ -73,7 +73,7 @@ switched to db mydb
 { "ok" : 1 }
 ```
 
-### ドキュメント作成と検索
+### ドキュメント作成と検索と削除
 ```
 > db.CAR.insert({name:'honda',since:1948});
 WriteResult({ "nInserted" : 1 })
@@ -83,6 +83,8 @@ WriteResult({ "nInserted" : 1 })
 { "_id" : ObjectId("5e66f6d35e5315bf4f146b39"), "name" : "honda", "since" : 1948 }
 { "_id" : ObjectId("5e66f76d5e5315bf4f146b3a"), "name" : "toyota", "since" : 1937 }
 >
+> db.CAR.remove({});
+WriteResult({ "nRemoved" : 3 })
 ```
 ### go言語のドライバ
 参考：https://github.com/mongodb/mongo-go-driver
