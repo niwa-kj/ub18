@@ -43,8 +43,7 @@ func insertStruct(col *mongo.Collection) error {
 	// 構造体が入らない誰か教えて。
 	doc := carType{ "name", "Bmw", "since", 1919, "udateat", time.Now(), }
     fmt.Println("carType", doc)
-	// _, err := col.InsertOne(context.Background(), &carTypedoc)
-	_, err := col.InsertOne(context.Background(), carType{ "name", "Bmw", "since", 1919, "udateat", time.Now(), })
+	_, err := col.InsertOne(context.Background(), doc)
 	return err
 }
 
